@@ -17,6 +17,7 @@ class acpid::base {
     service{acpid:
         ensure => running,
         enable => true,
+        hasstatus => true,
         require => Package[acpid],
     }
 }
