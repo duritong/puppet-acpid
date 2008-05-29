@@ -12,5 +12,6 @@ class acpid::disable inherits acpid::base {
     Service[acpid]{
         ensure => stopped,
         enable => false,
+        hasstatus => false,
     }
 }
