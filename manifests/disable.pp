@@ -5,13 +5,8 @@
 #######################################
 
 # remove acpid
-class acpid::disable inherits acpid::base {
-    Package[acpid]{
+class acpid::disable {
+    package{'acpid':
         ensure => absent,
-    }
-    Service[acpid]{
-        ensure => stopped,
-        enable => false,
-        hasstatus => false,
     }
 }
