@@ -10,7 +10,6 @@
 # General Public License version 3 as published by 
 # the Free Software Foundation.
 #
-
 class acpid {
-    include acpid::base 
+  include ::acpid::base
 }
